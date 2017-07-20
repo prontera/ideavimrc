@@ -4,10 +4,18 @@
 
 ## 使用
 
+#### 手工添加
+
 建立一个硬链接，直接让IDEA读取其配置。
 
 ```shell
 ln VimProjects/ideavimrc/local.vimrc ~/.ideavimrc
+```
+
+#### 自动添加
+
+```shell
+./build.sh
 ```
 
 ## 键位设置
