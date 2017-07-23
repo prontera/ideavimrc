@@ -51,6 +51,7 @@ noremap <C-U> <C-U>zz
 " E和R是为了保持与Chrome中的SurfingKeys的键位一致
 noremap E gT
 noremap R gt
+noremap J :action EditorJoinLines<CR>
 
 " Leader key relevant
 "noremap <leader>a :action <CR>
@@ -72,9 +73,8 @@ noremap <leader>h :action HideAllWindows<CR>
 noremap <leader>i :action Maven.Reimport<CR>
 " jump to next error
 noremap <leader>j :action GotoNextError<CR>
-" 同样也是j, 不过是反向的, 同时也考虑到不要占用k, 所以使用了大写表示反向
-noremap <leader>J :action GotoPreviousError<CR>
-"noremap <leader>k :action <CR>
+" jump to previous error，就近原则
+noremap <leader>k :action GotoPreviousError<CR>
 " light up
 noremap <leader>l :action HighlightUsagesInFile<CR>
 " mute breakpoints
