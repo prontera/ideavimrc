@@ -107,3 +107,7 @@ noremap <leader>v :action Vcs.QuickListPopupAction<CR>
 noremap <leader>` :action SelectInProjectView<CR>
 " 粘贴剪贴板寄存器的内容
 noremap <leader>; "*p
+
+" g key relevant
+" make
+noremap gm :action CompileDirty<CR>
