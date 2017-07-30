@@ -111,6 +111,7 @@ noremap <leader>; "*p
 " g key relevant
 " make
 noremap gc :action CloseAllEditorsButActive<CR>
+noremap gf :action GotoFile<CR>
 noremap gi :action ShowIntentionActions<CR>
 noremap gm :action CompileDirty<CR>
 noremap go :action GotoClass<CR>
