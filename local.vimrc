@@ -113,3 +113,5 @@ noremap <leader>; "*p
 noremap gc :action CloseAllEditorsButActive<CR>
 noremap gi :action ShowIntentionActions<CR>
 noremap gm :action CompileDirty<CR>
+noremap go :action GotoClass<CR>
+
