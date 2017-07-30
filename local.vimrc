@@ -110,4 +110,5 @@ noremap <leader>; "*p
 
 " g key relevant
 " make
+noremap gc :action CloseAllEditorsButActive<CR>
 noremap gm :action CompileDirty<CR>
