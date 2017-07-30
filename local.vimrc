@@ -115,4 +115,4 @@ noremap gf :action GotoFile<CR>
 noremap gi :action ShowIntentionActions<CR>
 noremap gm :action CompileDirty<CR>
 noremap go :action GotoClass<CR>
-
+noremap gp :action ManageRecentProjects<CR>
