@@ -14,10 +14,8 @@ set clipboard=unnamed
 
 " Insert
 inoremap jk <Esc>
-
 " Normal
 nnoremap dd ddzz
-
 " Visual
 vnoremap d dzz
 
@@ -60,7 +58,7 @@ noremap <leader>` :action SelectInProjectView<CR>
 " quit
 noremap <leader>q :wq<CR>
 " w
-"noremap <leader>w :action <CR>
+"noremap <leader>w :action<CR>
 " error description
 noremap <leader>e :action ShowErrorDescription<CR>
 " return
@@ -116,20 +114,60 @@ noremap <leader>m :action XDebugger.MuteBreakpoints<CR>
 
 " g key relevant
 
+" q
+"noremap gq :action <CR>
+" w
+"noremap gw :action <CR>
+" e
+"noremap ge :action <CR>
+" r
+"noremap gr :action <CR>
+" t
+"noremap gt :action <CR>
+" y
+"noremap gy :action <CR>
+" u
+"noremap gu :action <CR>
 " intention
 noremap gi :action ShowIntentionActions<CR>
 " goto class
 noremap go :action GotoClass<CR>
+" p
+"noremap gp :action <CR>
 
+" a
+"noremap ga :action <CR>
+" s
+"noremap gs :action <CR>
+" d
+"noremap gd :action <CR>
 " goto file
 noremap gf :action GotoFile<CR>
-" goto file
+" g
+"noremap gg :action <CR>
+" hierarchy
 noremap ghc :action CallHierarchy<CR>
 noremap ght :action TypeHierarchy<CR>
 noremap ghm :action MethodHierarchy<CR>
+" j
+"noremap gj :action <CR>
+" k
+"noremap gk :action <CR>
+" l
+"noremap gl :action <CR>
 
+" z
+"noremap gz :action <CR>
+" x
+"noremap gx :action <CR>
 " close other
 noremap gc :action CloseAllEditorsButActive<CR>
+" v
+"noremap gv :action <CR>
+" b
+"noremap gb :action <CR>
+" n
+"noremap gn :action <CR>
 " make
 noremap gm :action CompileDirty<CR>
 
