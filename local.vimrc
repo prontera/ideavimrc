@@ -85,6 +85,8 @@ noremap <leader>M :action MethodHierarchy<CR>
 noremap <leader>n :action ToggleLineBreakpoint<CR>
 " open file path
 noremap <leader>o :action ShowFilePath<CR>
+" p
+"noremap <leader>p :<CR>
 " quit
 noremap <leader>q :wq<CR>
 " return
@@ -109,10 +111,15 @@ noremap <leader>` :action SelectInProjectView<CR>
 noremap <leader>; "*p
 
 " g key relevant
-" make
+" close other
 noremap gc :action CloseAllEditorsButActive<CR>
+" goto file
 noremap gf :action GotoFile<CR>
+" intention
 noremap gi :action ShowIntentionActions<CR>
+" make
 noremap gm :action CompileDirty<CR>
+" goto class
 noremap go :action GotoClass<CR>
+" show projects
 noremap gp :action ManageRecentProjects<CR>
