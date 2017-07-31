@@ -53,73 +53,84 @@ noremap E gT
 noremap R gt
 noremap J :action EditorJoinLines<CR>
 
+" 个人习惯
+noremap <leader>` :action SelectInProjectView<CR>
+
 " Leader key relevant
-"noremap <leader>a :action <CR>
-" breakpoints
-noremap <leader>b :action ViewBreakpoints<CR>
-noremap <leader>c :action ChangeSignature<CR>
-" 调用关系
-noremap <leader>C :action CallHierarchy<CR>
-" debug option
-noremap <leader>d :action ChooseDebugConfiguration<CR>
+" quit
+noremap <leader>q :wq<CR>
+" w
+"noremap <leader>w :action <CR>
 " error description
 noremap <leader>e :action ShowErrorDescription<CR>
+" return
+noremap <leader>r :action Rerun<CR>
+" Windows或者MacOS的快捷键都与t相关, 所以选择t作为键
+noremap <leader>t :action Refactorings.QuickListPopupAction<CR>
+" class继承关系
+noremap <leader>T :action TypeHierarchy<CR>
+" y
+"noremap <leader>y :action <CR>
+" usage
+noremap <leader>u :action ShowUsages<CR>
+" import
+noremap <leader>i :action Maven.Reimport<CR>
+" open file path
+noremap <leader>o :action ShowFilePath<CR>
+" show projects
+noremap <leader>p :action ManageRecentProjects<CR>
+
+" a
+"noremap <leader>a :action <CR>
+" structure
+noremap <leader>s :action FileStructurePopup<CR>
+" debug option
+noremap <leader>d :action ChooseDebugConfiguration<CR>
 " 同样也是debug，因为d已经被ChooseDebugConfiguration占领, 所以就放在了d键隔壁. 当然也可以理解成fu*k it up
 noremap <leader>f :action DebugClass<CR>
+" g
 "noremap <leader>g :action <CR>
 " hide all
 noremap <leader>h :action HideAllWindows<CR>
-" import
-noremap <leader>i :action Maven.Reimport<CR>
 " jump to next error
 noremap <leader>j :action GotoNextError<CR>
 " jump to previous error，就近原则
 noremap <leader>k :action GotoPreviousError<CR>
 " light up
 noremap <leader>l :action HighlightUsagesInFile<CR>
+" 粘贴剪贴板寄存器的内容
+noremap <leader>; "*p
+
+" z
+"noremap <leader>z :action <CR>
+" x
+"noremap <leader>x :action <CR>
+" c
+noremap <leader>c :action ChangeSignature<CR>
+" 调用关系
+noremap <leader>C :action CallHierarchy<CR>
+" vcs
+noremap <leader>v :action Vcs.QuickListPopupAction<CR>
+" breakpoints
+noremap <leader>b :action ViewBreakpoints<CR>
+" 因为属于breakpoint范畴的功能, 所以就选择了b和m的隔壁
+noremap <leader>n :action ToggleLineBreakpoint<CR>
 " mute breakpoints
 noremap <leader>m :action XDebugger.MuteBreakpoints<CR>
 " 方法继承关系
 noremap <leader>M :action MethodHierarchy<CR>
-" 因为属于breakpoint范畴的功能, 所以就选择了b和m的隔壁
-noremap <leader>n :action ToggleLineBreakpoint<CR>
-" open file path
-noremap <leader>o :action ShowFilePath<CR>
-" p
-"noremap <leader>p :<CR>
-" quit
-noremap <leader>q :wq<CR>
-" return
-noremap <leader>r :action Rerun<CR>
-" structure
-noremap <leader>s :action FileStructurePopup<CR>
-" Windows或者MacOS的快捷键都与t相关, 所以选择t作为键
-noremap <leader>t :action Refactorings.QuickListPopupAction<CR>
-" class继承关系
-noremap <leader>T :action TypeHierarchy<CR>
-" usage
-noremap <leader>u :action ShowUsages<CR>
-" vcs
-noremap <leader>v :action Vcs.QuickListPopupAction<CR>
-"noremap <leader>w :action <CR>
-"noremap <leader>x :action <CR>
-"noremap <leader>y :action <CR>
-"noremap <leader>z :action <CR>
-" 个人习惯
-noremap <leader>` :action SelectInProjectView<CR>
-" 粘贴剪贴板寄存器的内容
-noremap <leader>; "*p
 
 " g key relevant
-" close other
-noremap gc :action CloseAllEditorsButActive<CR>
-" goto file
-noremap gf :action GotoFile<CR>
+
 " intention
 noremap gi :action ShowIntentionActions<CR>
-" make
-noremap gm :action CompileDirty<CR>
 " goto class
 noremap go :action GotoClass<CR>
-" show projects
-noremap gp :action ManageRecentProjects<CR>
+
+" goto file
+noremap gf :action GotoFile<CR>
+
+" close other
+noremap gc :action CloseAllEditorsButActive<CR>
+" make
+noremap gm :action CompileDirty<CR>
