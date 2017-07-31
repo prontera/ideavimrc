@@ -76,8 +76,8 @@ noremap <leader>o :action ShowFilePath<CR>
 " show projects
 noremap <leader>p :action ManageRecentProjects<CR>
 
-" a
-"noremap <leader>a :action <CR>
+" Vcs
+noremap <leader>a :action Vcs.QuickListPopupAction<CR>
 " structure
 noremap <leader>s :action FileStructurePopup<CR>
 " debug option
@@ -97,14 +97,15 @@ noremap <leader>l :action HighlightUsagesInFile<CR>
 " 粘贴剪贴板寄存器的内容
 noremap <leader>; "*p
 
-" z
-"noremap <leader>z :action <CR>
-" x
-"noremap <leader>x :action <CR>
-" c
-noremap <leader>c :action ChangeSignature<CR>
-" vcs
-noremap <leader>v :action Vcs.QuickListPopupAction<CR>
+" 本行皆为debug所用
+" resume - z
+noremap <leader>z :action Resume<CR>
+" step over
+noremap <leader>x :action StepOver<CR>
+" step into
+noremap <leader>c :action SmartStepInto<CR>
+" evaluate expression - v
+noremap <leader>v :action EvaluateExpression<CR>
 " breakpoints
 noremap <leader>b :action ViewBreakpoints<CR>
 " 因为属于breakpoint范畴的功能, 所以就选择了b和m的隔壁
@@ -171,8 +172,7 @@ noremap gc :action CloseAllEditorsButActive<CR>
 " make
 noremap gm :action CompileDirty<CR>
 
-"EvaluateExpression
-"Resume
-"StepOver
-"SmartStepInto
-"StepOut
+" c
+"noremap <leader>c :action ChangeSignature<CR>
+" vcs
+"noremap <leader>v :action Vcs.QuickListPopupAction<CR>
