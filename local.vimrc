@@ -67,8 +67,6 @@ noremap <leader>e :action ShowErrorDescription<CR>
 noremap <leader>r :action Rerun<CR>
 " Windows或者MacOS的快捷键都与t相关, 所以选择t作为键
 noremap <leader>t :action Refactorings.QuickListPopupAction<CR>
-" class继承关系
-noremap <leader>T :action TypeHierarchy<CR>
 " y
 "noremap <leader>y :action <CR>
 " usage
@@ -86,7 +84,7 @@ noremap <leader>p :action ManageRecentProjects<CR>
 noremap <leader>s :action FileStructurePopup<CR>
 " debug option
 noremap <leader>d :action ChooseDebugConfiguration<CR>
-" 同样也是debug，因为d已经被ChooseDebugConfiguration占领, 所以就放在了d键隔壁. 当然也可以理解成fu*k it up
+" 同样也是debug，因为d已经被ChooseDebugConfiguration占领, 所以就放在了d键隔壁.
 noremap <leader>f :action DebugClass<CR>
 " g
 "noremap <leader>g :action <CR>
@@ -107,8 +105,6 @@ noremap <leader>; "*p
 "noremap <leader>x :action <CR>
 " c
 noremap <leader>c :action ChangeSignature<CR>
-" 调用关系
-noremap <leader>C :action CallHierarchy<CR>
 " vcs
 noremap <leader>v :action Vcs.QuickListPopupAction<CR>
 " breakpoints
@@ -117,8 +113,6 @@ noremap <leader>b :action ViewBreakpoints<CR>
 noremap <leader>n :action ToggleLineBreakpoint<CR>
 " mute breakpoints
 noremap <leader>m :action XDebugger.MuteBreakpoints<CR>
-" 方法继承关系
-noremap <leader>M :action MethodHierarchy<CR>
 
 " g key relevant
 
@@ -129,8 +123,18 @@ noremap go :action GotoClass<CR>
 
 " goto file
 noremap gf :action GotoFile<CR>
+" goto file
+noremap ghc :action CallHierarchy<CR>
+noremap ght :action TypeHierarchy<CR>
+noremap ghm :action MethodHierarchy<CR>
 
 " close other
 noremap gc :action CloseAllEditorsButActive<CR>
 " make
 noremap gm :action CompileDirty<CR>
+
+"EvaluateExpression
+"Resume
+"StepOver
+"SmartStepInto
+"StepOut
