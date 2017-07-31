@@ -85,7 +85,7 @@ noremap <leader>d :action ChooseDebugConfiguration<CR>
 " 同样也是debug，因为d已经被ChooseDebugConfiguration占领, 所以就放在了d键隔壁.
 noremap <leader>f :action DebugClass<CR>
 " g
-"noremap <leader>g :action <CR>
+noremap <leader>g :action Generate<CR>
 " hide all
 noremap <leader>h :action HideAllWindows<CR>
 " jump to next error
@@ -113,7 +113,7 @@ noremap <leader>n :action ToggleLineBreakpoint<CR>
 noremap <leader>m :action XDebugger.MuteBreakpoints<CR>
 
 " g key relevant
-
+"
 " q
 "noremap gq :action <CR>
 " w
