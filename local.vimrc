@@ -171,8 +171,3 @@ noremap gc :action CloseAllEditorsButActive<CR>
 "noremap gn :action <CR>
 " make
 noremap gm :action CompileDirty<CR>
-
-" c
-"noremap <leader>c :action ChangeSignature<CR>
-" vcs
-"noremap <leader>v :action Vcs.QuickListPopupAction<CR>

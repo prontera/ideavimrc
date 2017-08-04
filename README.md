@@ -1,6 +1,6 @@
 # Idea Vim Configuration
 
-本仓库为[ideavim](https://github.com/JetBrains/ideavim)的个人配置，尽最大可能兼容Chrome Surfingkeys插件和SpaceVim的行为习惯。
+本仓库为[ideavim](https://github.com/JetBrains/ideavim)的个人配置，尽最大可能兼容Chrome Surfingkeys插件的行为习惯。
 
 ## 使用
 
@@ -20,12 +20,12 @@ ln VimProjects/ideavimrc/local.vimrc ~/.ideavimrc
 
 ## 键位设置
 
-在不与Surfingkeys和SpaceVim的大部分默认键位冲突下，有如下规则：
+在不与Surfingkeys的大部分默认键位冲突下，有如下规则：
 
 1. 尽量选用与原快捷键的意义相近的关键字键位
 2. 在关键字无法避让的情况下采用**就近原则**或**大写策略**
 
-如果键位不幸与SpaceVim的默认键位冲突，优先满足SpaceVim，将冲突键位放置于特殊字符处，如`;`。
+如果键位不幸与默认键位冲突，优先满足默认键位，将冲突键位放置于特殊字符处，如`;`。
 
 下面是某个版本下的键位快照，并不具体代表本仓库中的`local.vimrc`实际内容
 
