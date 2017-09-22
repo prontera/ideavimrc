@@ -43,7 +43,7 @@ noremap [{ [{zz
 noremap ]} ]}zz
 noremap gd gdzz
 noremap <C-O> :action Back<CR>
-noremap <C-I> <C-I>zz
+noremap <C-I> :action Forward<CR>
 noremap <C-D> <C-D>zz
 noremap <C-U> <C-U>zz
 " E和R是为了保持与Chrome中的SurfingKeys的键位一致
