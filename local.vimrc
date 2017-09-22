@@ -139,9 +139,9 @@ noremap go :action GotoClass<CR>
 " a
 "noremap ga :action <CR>
 " s
-"noremap gs :action <CR>
+noremap gs :action GotoImplementation<CR>
 " d
-"noremap gd :action <CR>
+noremap gd :action GotoDeclaration<CR>
 " goto file
 noremap gf :action GotoFile<CR>
 " g
