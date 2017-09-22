@@ -42,7 +42,7 @@ noremap } }zz
 noremap [{ [{zz
 noremap ]} ]}zz
 noremap gd gdzz
-noremap <C-O> <C-O>zz
+noremap <C-O> :action Back<CR>
 noremap <C-I> <C-I>zz
 noremap <C-D> <C-D>zz
 noremap <C-U> <C-U>zz
