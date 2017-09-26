@@ -171,3 +171,5 @@ noremap gc :action CloseAllEditorsButActive<CR>
 "noremap gn :action <CR>
 " make
 noremap gm :action CompileDirty<CR>
+" /
+noremap g/ :action FindInPath<CR>
