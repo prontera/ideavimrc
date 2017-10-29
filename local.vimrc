@@ -94,8 +94,8 @@ noremap <leader>j :action GotoNextError<CR>
 noremap <leader>k :action GotoPreviousError<CR>
 " light up
 noremap <leader>l :action HighlightUsagesInFile<CR>
-" 粘贴剪贴板寄存器的内容
-noremap <leader>; "*p
+" 最近复制寄存器
+noremap <leader>; "0p
 
 " 本行皆为debug所用
 " resume - z
