@@ -136,7 +136,7 @@ noremap go :action GotoClass<CR>
 " p
 "noremap gp :action <CR>
 
-" a
+" a 
 "noremap ga :action <CR>
 " s
 noremap gs :action GotoImplementation<CR>
@@ -145,7 +145,7 @@ noremap gd :action GotoDeclaration<CR>
 " goto file
 noremap gf :action GotoFile<CR>
 " g
-"noremap gg :action <CR>
+"noremap gg :action MUST_NOT_BE_CHANGED!!!<CR>
 " hierarchy
 noremap ghc :action CallHierarchy<CR>
 noremap ght :action TypeHierarchy<CR>
