@@ -137,7 +137,7 @@ noremap go :action GotoClass<CR>
 "noremap gp :action <CR>
 
 " a 
-"noremap ga :action <CR>
+noremap ga :action Gitflow.OpenGitflowPopup<CR>
 " s
 noremap gs :action GotoImplementation<CR>
 " d
