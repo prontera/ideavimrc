@@ -122,11 +122,11 @@ noremap <leader>m :action XDebugger.MuteBreakpoints<CR>
 " e
 "noremap ge :action <CR>
 " r
-"noremap gr :action <CR>
+noremap gr :action RenameElement<CR>
 " t
 "noremap gt :action <CR>
 " y
-"noremap gy :action <CR>
+noremap gy :action CopyReference<CR>
 " u
 "noremap gu :action <CR>
 " intention
