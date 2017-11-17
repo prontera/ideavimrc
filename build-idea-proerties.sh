@@ -6,18 +6,23 @@
 set -eo pipefail
 shopt -s nullglob
 
-idea_pros_path=$HOME/.idea.properties
+idea_pros_path=$HOME/idea.properties
 
 if [[ -e $HOME/.zshrc ]]; then
     if ! grep -q IDEA_PROPERTIES "$HOME/.zshrc"; then
-        echo -e write it to zshrc
+        echo write it to zshrc
         echo "export IDEA_PROPERTIES=${idea_pros_path}" >> $HOME/.zshrc
+        touch ${idea_pros_path}
+        echo 'idea.config.path=${user.home}/Public/Nutstore/config/mac/IntelliJIdea2016.3/config' >> ${idea_pros_path}
+        echo 'idea.system.path=${user.home}/Public/Nutstore/config/mac/IntelliJIdea2016.3/system' >> ${idea_pros_path}
+        echo 'idea.plugins.path=${user.home}/Public/Nutstore/config/mac/IntelliJIdea2016.3/plugins' >> ${idea_pros_path}
     fi
 fi
 if [[ -e $HOME/.bashrc ]];then
     if ! grep -q IDEA_PROPERTIES "$HOME/.bashrc"; then
-        echo -e write it to bashrc
+        echo write it to bashrc
         echo "export IDEA_PROPERTIES=${idea_pros_path}" >> $HOME/.bashrc
+        touch ${idea_pros_path}
     fi
 fi
 
