@@ -122,7 +122,7 @@ noremap <leader>m :action XDebugger.MuteBreakpoints<CR>
 " e
 "noremap ge :action <CR>
 " r
-noremap gr :action RenameElement<CR>
+"noremap gr :action <CR>
 " t
 "noremap gt :action <CR>
 " y
