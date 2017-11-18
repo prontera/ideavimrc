@@ -22,7 +22,7 @@ if [[ -e $HOME/.bashrc ]];then
     if ! grep -q IDEA_PROPERTIES "$HOME/.bashrc"; then
         echo "$(tput setaf 2)>>> "write it down to .bashrc"  $(tput sgr0)"
         echo "export IDEA_PROPERTIES=${idea_pros_path}" >> $HOME/.bashrc
-        $HOME/.bashrc
+        source $HOME/.bashrc
         touch ${idea_pros_path}
         echo 'idea.config.path=${user.home}/Public/Nutstore/config/mac/IntelliJIdea2016.3/config' > ${idea_pros_path}
         echo 'idea.plugins.path=${user.home}/Public/Nutstore/config/mac/IntelliJIdea2016.3/plugins' >> ${idea_pros_path}
