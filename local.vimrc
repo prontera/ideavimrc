@@ -1,4 +1,4 @@
-﻿" M->cmd, A->option, C->control
+" M->cmd, A->option, C->control
 
 " leader
 let mapleader = " "
@@ -126,7 +126,7 @@ noremap <leader>m :action XDebugger.MuteBreakpoints<CR>
 " t
 "noremap gt :action <CR>
 " y
-"noremap gy :action <CR>
+noremap gy :action CopyReference<CR>
 " u
 "noremap gu :action <CR>
 " intention
@@ -145,7 +145,7 @@ noremap gd :action GotoDeclaration<CR>
 " goto file
 noremap gf :action GotoFile<CR>
 " g
-"noremap gg :action <CR>
+"noremap gg :action MUST_NOT_BE_CHANGED!!!<CR>
 " hierarchy
 noremap ghc :action CallHierarchy<CR>
 noremap ght :action TypeHierarchy<CR>
