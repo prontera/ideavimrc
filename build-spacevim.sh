@@ -10,6 +10,7 @@ spacevim_d=$HOME/.SpaceVim.d
 
 # 无参函数
 # 检测spacevim文件是否存在，如果存在则重命名该文件
+# *********** 建议使用Vim 8.0 *************
 rename_if_file_exists(){
     local random="$RANDOM"
     if [[ -e "${spacevim_d}/init.vim"  ]]; then
