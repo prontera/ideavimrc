@@ -3,14 +3,20 @@
 " leader
 let mapleader = " "
 
-" setting
+" 启用vim surround功能
 set surround
-set nu
+" 显示相对行号
 set rnu
+" 高亮搜索
 set hlsearch
+" 自动定位到输入中的字符串，不需要回车搜索
 set incsearch
+" 显示当前的模式
 set showmode
+" 共享系统粘贴板
 set clipboard=unnamed
+" 搜索时智能匹配大小写
+set ignorecase smartcase
 
 " Insert
 inoremap jk <Esc>
@@ -94,7 +100,7 @@ noremap <leader>j :action GotoNextError<CR>
 noremap <leader>k :action GotoPreviousError<CR>
 " light up
 noremap <leader>l :action HighlightUsagesInFile<CR>
-" 最近复制寄存器
+" 粘贴最近复制寄存器
 noremap <leader>; "0p
 
 " 本行皆为debug所用
@@ -130,28 +136,28 @@ noremap gy :action CopyReference<CR>
 " u
 "noremap gu :action <CR>
 " intention
-noremap gi :action ShowIntentionActions<CR>
+noremap gi <BS>:action ShowIntentionActions<CR>
 " goto class
-noremap go :action GotoClass<CR>
+noremap go <ESC>:action GotoClass<CR>
 " p
 "noremap gp :action <CR>
 
 " a
 noremap ga :action Gitflow.OpenGitflowPopup<CR>
-" s
+" goto source
 noremap gs :action GotoImplementation<CR>
-" d
+" goto declaration
 noremap gd :action GotoDeclaration<CR>
 " goto file
-noremap gf :action GotoFile<CR>
+noremap gf <ESC>:action GotoFile<CR>
 " g
 "noremap gg :action MUST_NOT_BE_CHANGED!!!<CR>
 " hierarchy
 noremap ghc :action CallHierarchy<CR>
 noremap ght :action TypeHierarchy<CR>
 noremap ghm :action MethodHierarchy<CR>
-" j
-"noremap gj :action <CR>
+" acejump
+noremap gj <BS>:action emacsIDEAs.AceJump<CR>
 " k
 "noremap gk :action <CR>
 " l
@@ -159,17 +165,29 @@ noremap ghm :action MethodHierarchy<CR>
 
 " z
 "noremap gz :action <CR>
-" x
-"noremap gx :action <CR>
-" close other
-noremap gc :action CloseAllEditorsButActive<CR>
+" close all but this
+noremap gx :action CloseAllEditorsButActive<CR>
+" compile
+noremap gc :action CompileDirty<CR>
 " v
 "noremap gv :action <CR>
 " b
-"noremap gb :action <CR>
+noremap gb :action FindBugs.CurrentFileAction<CR>
 " n
 "noremap gn :action <CR>
-" make
-noremap gm :action CompileDirty<CR>
-" /
+" m
+"noremap gm :action <CR>
+
+" \ also works
+"noremap \q :action <CR>
+" refresh
+noremap \r :source ~/.ideavimrc<CR>
+
+" global find
 noremap g/ :action FindInPath<CR>
+" gloaal replace
+noremap g' :action ReplaceInPath<CR>
+" find
+noremap / :action Find<CR>
+" replace
+noremap ' :action Replace<CR>
