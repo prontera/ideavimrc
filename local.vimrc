@@ -175,8 +175,8 @@ noremap gc :action CompileDirty<CR>
 noremap gb :action FindBugs.CurrentFileAction<CR>
 " n
 "noremap gn :action <CR>
-" m
-"noremap gm :action <CR>
+" goto method
+noremap gm :action GotoSymbol<CR>
 
 " \ also works
 "noremap \q :action <CR>
