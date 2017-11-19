@@ -14,7 +14,7 @@ ln VimProjects/ideavimrc/local.vimrc ~/.ideavimrc
 
 #### ideavimrc自动添加
 
-有导向到第三方插件，如AceJump-Lite、GitFlow
+注意配置中有导向到第三方插件，如AceJump-Lite、GitFlow
 
 ```shell
 ./build-ideavimrc.sh
@@ -29,7 +29,7 @@ ln VimProjects/ideavimrc/local.vimrc ~/.ideavimrc
 
 #### idea properties自动添加
 
-该策略主要是防止idea升级时覆盖自定义的配置路径，或者是多主机使用时，配置同步盘达到多机配置同步的功能。
+该策略主要是防止idea升级时覆盖自定义的配置路径，或者是多主机使用时配合同步盘达到配置文件同步的功能。
 
 ```sh
 ./build-idea-proerties.sh
