@@ -139,8 +139,8 @@ noremap gy :action CopyReference<CR>
 noremap gi <BS>:action ShowIntentionActions<CR>
 " goto class
 noremap go <BS>:action GotoClass<CR>
-" p
-"noremap gp :action <CR>
+" param info
+noremap gp :action ParameterInfo<CR>
 
 " a
 noremap ga :action Gitflow.OpenGitflowPopup<CR>
