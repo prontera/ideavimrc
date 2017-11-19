@@ -138,7 +138,7 @@ noremap gy :action CopyReference<CR>
 " intention
 noremap gi <BS>:action ShowIntentionActions<CR>
 " goto class
-noremap go <ESC>:action GotoClass<CR>
+noremap go <BS>:action GotoClass<CR>
 " p
 "noremap gp :action <CR>
 
@@ -149,7 +149,7 @@ noremap gs :action GotoImplementation<CR>
 " goto declaration
 noremap gd :action GotoDeclaration<CR>
 " goto file
-noremap gf <ESC>:action GotoFile<CR>
+noremap gf <BS>:action GotoFile<CR>
 " g
 "noremap gg :action MUST_NOT_BE_CHANGED!!!<CR>
 " hierarchy
