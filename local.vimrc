@@ -138,8 +138,8 @@ noremap gy :action CopyReference<CR>
 "noremap gu :action <CR>
 " intention
 noremap gi <ESC>:action ShowIntentionActions<CR>
-" goto class
-noremap go <ESC>:action GotoClass<CR>
+" o
+"noremap go :action <CR>
 " param info
 noremap gp <ESC>:action ParameterInfo<CR>
 
@@ -174,8 +174,8 @@ noremap gc :action CompileDirty<CR>
 "noremap gv :action <CR>
 " b
 noremap gb :action FindBugs.CurrentFileAction<CR>
-" n
-"noremap gn :action <CR>
+" goto class
+noremap gn <ESC>:action GotoClass<CR>
 " goto method
 noremap gm :action GotoSymbol<CR>
 
