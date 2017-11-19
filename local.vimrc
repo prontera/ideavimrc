@@ -123,8 +123,8 @@ noremap <leader>m :action XDebugger.MuteBreakpoints<CR>
 "
 " q
 "noremap gq :action <CR>
-" w
-"noremap gw :action <CR>
+" switcher
+noremap gw <BS>:action RecentFiles<CR>
 " e
 "noremap ge :action <CR>
 " r
