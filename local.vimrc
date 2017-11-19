@@ -1,4 +1,5 @@
 " M->cmd, A->option, C->control
+" <ESC> - escape, <BS> - backspace, <CR> - return
 
 " leader
 let mapleader = " "
@@ -124,7 +125,7 @@ noremap <leader>m :action XDebugger.MuteBreakpoints<CR>
 " q
 "noremap gq :action <CR>
 " switcher
-noremap gw <BS>:action RecentFiles<CR>
+noremap gw <ESC>:action RecentFiles<CR>
 " e
 "noremap ge :action <CR>
 " r
@@ -136,11 +137,11 @@ noremap gy :action CopyReference<CR>
 " u
 "noremap gu :action <CR>
 " intention
-noremap gi <BS>:action ShowIntentionActions<CR>
+noremap gi <ESC>:action ShowIntentionActions<CR>
 " goto class
-noremap go <BS>:action GotoClass<CR>
+noremap go <ESC>:action GotoClass<CR>
 " param info
-noremap gp :action ParameterInfo<CR>
+noremap gp <ESC>:action ParameterInfo<CR>
 
 " a
 noremap ga :action Gitflow.OpenGitflowPopup<CR>
@@ -149,7 +150,7 @@ noremap gs :action GotoImplementation<CR>
 " goto declaration
 noremap gd :action GotoDeclaration<CR>
 " goto file
-noremap gf <BS>:action GotoFile<CR>
+noremap gf <ESC>:action GotoFile<CR>
 " g
 "noremap gg :action MUST_NOT_BE_CHANGED!!!<CR>
 " hierarchy
@@ -157,7 +158,7 @@ noremap ghc :action CallHierarchy<CR>
 noremap ght :action TypeHierarchy<CR>
 noremap ghm :action MethodHierarchy<CR>
 " acejump
-noremap gj <BS>:action emacsIDEAs.AceJump<CR>
+noremap gj <ESC>:action emacsIDEAs.AceJump<CR>
 " k
 "noremap gk :action <CR>
 " l
