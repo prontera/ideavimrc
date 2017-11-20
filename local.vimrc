@@ -192,3 +192,7 @@ noremap g' :action ReplaceInPath<CR>
 noremap / :action Find<CR>
 " replace
 noremap ' :action Replace<CR>
+" previous methos
+noremap [[ :action MethodUp<CR>zz
+" next method
+noremap ]] :action MethodDown<CR>zz
