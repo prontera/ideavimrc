@@ -83,8 +83,8 @@ noremap <leader>o :action ShowFilePath<CR>
 " show projects
 noremap <leader>p :action ManageRecentProjects<CR>
 
-" Vcs
-noremap <leader>a :action Vcs.QuickListPopupAction<CR>
+" ace jump
+noremap <leader>a <ESC>:action emacsIDEAs.AceJump<CR>
 " structure
 noremap <leader>s :action FileStructurePopup<CR>
 " debug option
@@ -144,7 +144,7 @@ noremap gi <ESC>:action ShowIntentionActions<CR>
 noremap gp <ESC>:action ParameterInfo<CR>
 
 " a
-noremap ga :action Gitflow.OpenGitflowPopup<CR>
+"noremap ga <ESC>:action emacsIDEAs.AceJump<CR>
 " goto source
 noremap gs :action GotoImplementation<CR>
 " goto declaration
@@ -157,8 +157,8 @@ noremap gf <ESC>:action GotoFile<CR>
 noremap ghc :action CallHierarchy<CR>
 noremap ght :action TypeHierarchy<CR>
 noremap ghm :action MethodHierarchy<CR>
-" acejump
-noremap gj <ESC>:action emacsIDEAs.AceJump<CR>
+" j
+" noremap gj <ESC>:action <CR>
 " k
 "noremap gk :action <CR>
 " l
@@ -183,6 +183,10 @@ noremap gm :action GotoSymbol<CR>
 "noremap \q :action <CR>
 " refresh
 noremap \r :source ~/.ideavimrc<CR>
+" git flow
+noremap \[ :action Gitflow.OpenGitflowPopup<CR>
+" Vcs
+noremap \] :action Vcs.QuickListPopupAction<CR>
 
 " global find
 noremap g/ :action FindInPath<CR>
