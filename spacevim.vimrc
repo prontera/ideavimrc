@@ -59,6 +59,7 @@ noremap ]} ] }zz
 noremap <C-D> <C-D>zz
 noremap <C-U> <C-U>zz
 noremap [SPC]; "0p
-noremap [SPC]q :x<CR>
+noremap [SPC]q ZZ
 " Insert
-inoremap jk <Esc>
+inoremap jk <Esc>:w<CR>
+inoremap <ESC> <ESC>:w<CR>
