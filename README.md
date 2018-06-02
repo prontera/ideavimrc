@@ -32,7 +32,7 @@ ln VimProjects/ideavimrc/local.vimrc ~/.ideavimrc
 该策略主要是防止idea升级时覆盖自定义的配置路径，或者是多主机使用时配合同步盘达到配置文件同步的功能。
 
 ```sh
-./build-idea-proerties.sh
+./build-idea-properties.sh
 ```
 
 ## 键位设置
