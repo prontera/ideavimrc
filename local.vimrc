@@ -37,6 +37,8 @@ noremap e ezz
 noremap E Ezz
 noremap b bzz
 noremap B Bzz
+noremap H Hzz
+noremap L Lzz
 noremap 0 0zz
 noremap $ $zz
 noremap ^ ^zz

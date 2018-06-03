@@ -50,6 +50,8 @@ noremap * *zz
 noremap j jzz
 noremap k kzz
 noremap G Gzz
+noremap H Hzz
+noremap L Lzz
 noremap ( (zz
 noremap ) )zz
 noremap { {zz
