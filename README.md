@@ -1,6 +1,10 @@
-# Idea Vim Configuration
+# IdeaVim Configuration
 
-本仓库为[ideavim](https://github.com/JetBrains/ideavim)的个人配置，尽最大可能兼容Chrome Surfingkeys插件的行为习惯。
+本仓库初衷为通过一个简单的Shell脚本快速配置[IdeaVim](https://github.com/JetBrains/ideavim)，但随着组件的不断丰富，现在已经演变成了一个专治老年痴呆的配置备忘录，包括有：
+
+* MacOS USTC源设置
+* SpaceVim键位配置
+* IdeaVim键位配置
 
 ## 使用
 
