@@ -11,17 +11,18 @@ cd "$(brew --repo)"
 git remote set-url origin https://mirrors.ustc.edu.cn/brew.git
 # homebrew bottles
 # bash
-echo 'export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.ustc.edu.cn/homebrew-bottles' >> ~/.bashrc
-source ~/.bash_profile
+if [[ -e "$HOME/.bash_profile" ]]; then
+  echo 'export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.ustc.edu.cn/homebrew-bottles' >> ~/.bashrc
+  echo "$(tput setaf 2)>>> "append to .bash_profile!"  $(tput sgr0)"
+fi
 # zsh
-echo 'export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.ustc.edu.cn/homebrew-bottles' >> ~/.zshrc
-source ~/.zshrc
+if [[ -e "$HOME/.zshrc" ]]; then
+  echo 'export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.ustc.edu.cn/homebrew-bottles' >> ~/.zshrc
+  echo "$(tput setaf 2)>>> "append to .zshrc!"  $(tput sgr0)"
+fi
 # homebrew core
 cd "$(brew --repo)/Library/Taps/homebrew/homebrew-core"
 git remote set-url origin https://mirrors.ustc.edu.cn/homebrew-core.git
-# homebrew cask
-cd "$(brew --repo)"/Library/Taps/caskroom/homebrew-cask
-git remote set-url origin https://mirrors.ustc.edu.cn/homebrew-cask.git
 
 echo "$(tput setaf 2)>>> "Done!"  $(tput sgr0)"
 exit 0

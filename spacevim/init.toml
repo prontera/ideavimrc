@@ -1,0 +1,7 @@
+[[layers]]
+  name = "colorscheme"
+[options]
+  vimcompatible = true
+  bootstrap_before = "chris#init"
+  colorscheme = "molokai"
+  enable_statusline_display_mode = true

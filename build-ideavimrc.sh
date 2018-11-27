@@ -17,6 +17,6 @@ rename_if_file_exists(){
 }
 
 rename_if_file_exists
-ln local.vimrc ~/.ideavimrc
+ln idea/idea.vimrc "$HOME/.ideavimrc"
 echo "$(tput setaf 2)>>> "Done!"  $(tput sgr0)"
 exit 0

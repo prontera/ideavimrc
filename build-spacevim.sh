@@ -9,17 +9,14 @@ shopt -s nullglob
 spacevim_d=$HOME/.SpaceVim.d
 
 # 无参函数
-# 检测spacevim文件是否存在，如果存在则重命名该文件
-# *********** 建议使用Vim 8.0 *************
-rename_if_file_exists(){
-    local random="$RANDOM"
-    if [[ -e "${spacevim_d}/init.vim"  ]]; then
-        echo "$(tput setaf 1)>>> "file \"init.vim\" has already exists which had been renamed to init-$random.vim"  $(tput sgr0)"
-        mv "${spacevim_d}/init.vim" "${spacevim_d}/init-$random.vim"
-    fi
+# 将自定义配置自动追加~/.SpaceVim.d下的同名目录
+append_config(){
+    mkdir -p "${spacevim_d}"
+    mkdir -p "${spacevim_d}/autoload"
+    cat spacevim/init.toml >> "${spacevim_d}/init.toml"
+    cat spacevim/autoload/chris.vim >> "${spacevim_d}/autoload/chris.vim"
 }
 
-rename_if_file_exists
-ln spacevim.vimrc "$HOME/.SpaceVim.d/init.vim"
+append_config
 echo "$(tput setaf 2)>>> "Done!"  $(tput sgr0)"
 exit 0
