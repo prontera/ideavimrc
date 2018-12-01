@@ -25,7 +25,7 @@ ln VimProjects/ideavimrc/local.vimrc ~/.ideavimrc
 ```
 #### spacevim自动添加
 
-配置基本的spacevim属性，最好先使用brew安装vim 8.0，可以先启用USTC源加速，并且下载powerline配合iTerm2和zsh达到更好的视觉和使用效果。
+配置基本的spacevim属性，最好先使用brew安装vim 8.0，可以先启用[USTC软件源加速](https://mirrors.ustc.edu.cn/help/search.html?q=brew&check_keywords=yes&area=default#)，并且下载powerline配合iTerm2和zsh达到更好的视觉和使用效果。
 
 ```sh
 ./build-spacevim.sh
