@@ -6,6 +6,8 @@ let mapleader = " "
 
 " 启用vim surround功能
 set surround
+" 启用multi cursor
+set multiple-cursors
 " 显示行号
 set nu
 " 显示相对行号
