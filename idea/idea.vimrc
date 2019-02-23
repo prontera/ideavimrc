@@ -206,3 +206,6 @@ noremap ' <ESC>:action Replace<CR>
 noremap [[ <ESC>:action MethodUp<CR>
 " next method
 noremap ]] <ESC>:action MethodDown<CR>
+
+" multiple cursors
+map <A-M>  <A-N>
