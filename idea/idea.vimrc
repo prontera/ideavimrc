@@ -70,8 +70,8 @@ noremap <leader>` <ESC>:action SelectInProjectView<CR>
 " Leader key relevant
 " quit
 noremap <leader>q :wq<CR>
-" w
-"noremap <leader>w <ESC>:action<CR>
+" write to favorite
+noremap <leader>w <ESC>:action AddToFavoritesPopup<CR>
 " error description
 noremap <leader>e <ESC>:action ShowErrorDescription<CR>
 " return
@@ -150,7 +150,7 @@ noremap gi <ESC>:action ShowIntentionActions<CR>
 noremap gp <ESC>:action ParameterInfo<CR>
 
 " a
-"noremap ga <ESC>:action emacsIDEAs.AceJump<CR>
+"noremap ga <ESC>:action <CR>
 " goto source
 noremap gs <ESC>:action GotoImplementation<CR>
 " goto declaration
@@ -189,6 +189,8 @@ noremap gm <ESC>:action GotoSymbol<CR>
 "noremap \q <ESC>:action <CR>
 " refresh
 noremap \r <ESC>:source ~/.ideavimrc<CR>
+" uml popup
+noremap \u <ESC>:action ShowUmlDiagramPopup<CR>
 " git flow
 noremap \[ <ESC>:action Gitflow.OpenGitflowPopup<CR>
 " Vcs
@@ -209,3 +211,4 @@ noremap ]] <ESC>:action MethodDown<CR>
 
 " multiple cursors
 map <A-M>  <A-N>
+set clipboard+=ideaput
