@@ -71,8 +71,8 @@ noremap <leader>` <ESC>:action SelectInProjectView<CR>
 " Leader key relevant
 " quit
 noremap <leader>q :wq<CR>
-" w
-"noremap <leader>w <ESC>:action<CR>
+" write to favorite
+noremap <leader>w <ESC>:action AddToFavoritesPopup<CR>
 " error description
 noremap <leader>e <ESC>:action ShowErrorDescription<CR>
 " return
@@ -212,3 +212,4 @@ noremap ]] <ESC>:action MethodDown<CR>
 
 " multiple cursors
 map <A-M>  <A-N>
+set clipboard+=ideaput
