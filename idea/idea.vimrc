@@ -20,6 +20,7 @@ set incsearch
 set showmode
 " 共享系统粘贴板
 set clipboard=unnamed
+set clipboard+=ideaput
 " 搜索时智能匹配大小写
 set ignorecase smartcase
 
@@ -150,7 +151,7 @@ noremap gi <ESC>:action ShowIntentionActions<CR>
 noremap gp <ESC>:action ParameterInfo<CR>
 
 " a
-"noremap ga <ESC>:action emacsIDEAs.AceJump<CR>
+"noremap ga <ESC>:action <CR>
 " goto source
 noremap gs <ESC>:action GotoImplementation<CR>
 " goto declaration
@@ -189,6 +190,8 @@ noremap gm <ESC>:action GotoSymbol<CR>
 "noremap \q <ESC>:action <CR>
 " refresh
 noremap \r <ESC>:source ~/.ideavimrc<CR>
+" uml popup
+noremap \u <ESC>:action ShowUmlDiagramPopup<CR>
 " git flow
 noremap \[ <ESC>:action Gitflow.OpenGitflowPopup<CR>
 " Vcs
