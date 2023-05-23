@@ -71,8 +71,8 @@ noremap <leader>` <ESC>:action SelectInProjectView<CR>
 " Leader key relevant
 " quit
 noremap <leader>q :wq<CR>
-" write to favorite
-noremap <leader>w <ESC>:action AddToFavoritesPopup<CR>
+" w
+"noremap <leader>w <ESC>:action<CR>
 " error description
 noremap <leader>e <ESC>:action ShowErrorDescription<CR>
 " return
@@ -193,9 +193,9 @@ noremap \r <ESC>:source ~/.ideavimrc<CR>
 " uml popup
 noremap \u <ESC>:action ShowUmlDiagramPopup<CR>
 " git flow
-noremap \[ <ESC>:action Gitflow.OpenGitflowPopup<CR>
+noremap \[ <ESC>:action VcsGroups<CR>
 " Vcs
-noremap \] <ESC>:action Vcs.QuickListPopupAction<CR>
+noremap \] <ESC>:action Git.Menu<CR>
 
 " global find
 noremap g/ <ESC>:action FindInPath<CR>
@@ -212,4 +212,3 @@ noremap ]] <ESC>:action MethodDown<CR>
 
 " multiple cursors
 map <A-M>  <A-N>
-set clipboard+=ideaput
