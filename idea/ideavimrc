@@ -1,13 +1,14 @@
 " M->cmd, A->option, C->control
 " <ESC> - escape, <BS> - backspace, <CR> - return
 
-" leader
+" leader key的键位先于任何配置
 let mapleader = " "
 
-" 启用vim surround功能
+" https://github.com/JetBrains/ideavim/wiki/IdeaVim-Plugins
+set easymotion
 set surround
-" 启用multi cursor
 set multiple-cursors
+" https://github.com/JetBrains/ideavim/wiki/set-commands
 " 显示行号
 set nu
 " 显示相对行号
@@ -56,8 +57,8 @@ noremap } }zz
 noremap [{ [{zz
 noremap ]} ]}zz
 noremap gd gdzz
-noremap <C-O> <ESC>:action Back<CR>
-noremap <C-I> <ESC>:action Forward<CR>
+noremap <C-O> :action Back<CR>
+noremap <C-I> :action Forward<CR>
 noremap <C-D> <C-D>zz
 noremap <C-U> <C-U>zz
 " E和R是为了保持与Chrome中的SurfingKeys的键位一致
@@ -91,7 +92,7 @@ noremap <leader>o <ESC>:action ShowFilePath<CR>
 noremap <leader>p <ESC>:action ManageRecentProjects<CR>
 
 " ace jump
-noremap <leader>a <ESC>:action emacsIDEAs.AceJumpWord<CR>
+"noremap <leader>a <ESC>:action <CR>
 " structure
 noremap <leader>s <ESC>:action FileStructurePopup<CR>
 " debug option
@@ -140,7 +141,7 @@ noremap gw <ESC>:action RecentFiles<CR>
 " translator(third party plugin)
 noremap gt <ESC>:action $EditorTranslateAction<CR>
 " y
-noremap gy <ESC>:action CopyReference<CR>
+noremap gy :action CopyReference<CR>
 " u
 "noremap gu <ESC>:action <CR>
 " intention
